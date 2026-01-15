@@ -9,6 +9,7 @@
 bin/
 debug/
 release/
+output/
 
 # Ignore VS Code settings
 .vscode/
@@ -20,3 +21,4 @@ release/
 # Ignore system files
 Thumbs.db
 .DS_Store
+
