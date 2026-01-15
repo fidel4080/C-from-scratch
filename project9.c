@@ -11,7 +11,7 @@ int main(){
     for (i=0; i < n; i++){
         printf("Enter the marks of student %d:\n", i+1);
         scanf("%d", &marks[i]);
-        sum += marks[i];
+        sum += marks[i];  //sum = sum + mark[i]
     }
 
     printf("Sum = %d", sum);
