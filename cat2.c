@@ -1,25 +1,29 @@
+//A program to read and display elements of an array
+
 #include <stdio.h>
 
-int main() {
+int main(){
     int n, i;
 
-    printf("Enter the number of elements: ");
+    printf("Enter the number of elements of the array: \n");
     scanf("%d", &n);
+    if(n <= 0){
+        printf("Array elements can only be more than 0");
+        return 1;
+    }
+    
+    int array[n];
 
-    int arr[n]; // declare array of size n
 
-    // Read elements
-    for (i = 0; i < n; i++) {
-        printf("Enter element %d: ", i + 1);
-        scanf("%d", &arr[i]);
+    for(i = 0; i < n; ++i){
+        printf("Enter element %d:", i + 1);
+        scanf("%d", &array[i]);
     }
 
-    // Display elements
-    printf("The elements of the array are: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+    printf("The elements of the array are: \n");
+    for(i = 0; i < n; ++i){
+        printf("%d ", array[i]);
     }
 
-    printf("\n");
     return 0;
 }
